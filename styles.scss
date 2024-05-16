@@ -1,0 +1,44 @@
+// project colors
+$primary-color: hsl(273, 85%, 13%);
+$secondary-color: hsl(150, 100%, 63%);
+$dark-gray: #584062;
+$light-gray: #fcf8ff;
+$color-white: #fff;
+
+// project font families
+$font-family-heading: "Fraunces144", serif;
+$font-family-body: "Manrope", sans-serif;
+
+// project font sizes and line-heights
+$base-font-size: 18px; // You can adjust this for your preference
+
+$heading-l-size: 80px;
+$heading-l-line-height: 80px;
+
+$heading-m-size: 56px;
+$heading-m-line-height: 64px;
+
+$heading-s-size: 32px;
+$heading-s-line-height: 40px;
+
+$body-font-size: $base-font-size;
+$body-line-height: 32px;
+
+//primary button
+@mixin primary-button($color: $primary-color, $hover-color: $secondary-color, $border-color: $primary-color, $border-width: none) {
+    background-color: $color;
+    color: $secondary-color;
+    font-family: "manrope", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 32px;
+    padding: 13px 25px;
+    width: 190px;
+    height: 58px;
+    border: $border-width solid $border-color;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+}
