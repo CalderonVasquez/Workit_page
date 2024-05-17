@@ -42,3 +42,7 @@ $body-line-height: 32px;
         background-color: $hover-color;
     }
 }
+
+.primary-button {
+    @include primary-button(); // Uses the default values from the mixin definition
+}
