@@ -1,0 +1,19 @@
+.primary-button {
+  background-color: hsl(150, 100%, 63%);
+  color: hsl(273, 85%, 13%);
+  font-family: "manrope", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  padding: 13px 25px;
+  width: 190px;
+  height: 58px;
+  border: 2px solid hsl(150, 100%, 63%);
+}
+.primary-button:hover {
+  background-color: hsl(273, 85%, 13%);
+  color: hsl(150, 100%, 63%);
+}
+
+/*# sourceMappingURL=styles.css.map */
