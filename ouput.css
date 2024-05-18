@@ -10,14 +10,14 @@
 .workit-header {
   background-image: url("./images/bg-pattern-1.svg"), url("./images/bg-pattern-2.svg");
   background-repeat: no-repeat;
-  background-position: left center, right center;
+  background-position: left center, right bottom;
 }
 
 .workit-header {
   background-color: hsl(273, 85%, 13%);
-  min-height: 730px;
 }
 
+/* header section ends */
 .primary-button {
   background-color: hsl(150, 100%, 63%);
   color: hsl(273, 85%, 13%);
@@ -36,4 +36,4 @@
   color: hsl(150, 100%, 63%);
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=ouput.css.map */

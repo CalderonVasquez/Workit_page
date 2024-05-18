@@ -1,3 +1,7 @@
+// reset
+@use "reset";
+@use "header";
+
 // project colors
 $secondary-color: hsl(273, 85%, 13%);
 $primary-color: hsl(150, 100%, 63%);
@@ -23,6 +27,16 @@ $heading-s-line-height: 40px;
 
 $body-font-size: $base-font-size;
 $body-line-height: 32px;
+
+
+$header-bg: $secondary-color;
+.workit-header {
+    background-color: $header-bg;
+    min-height: 730px;
+}
+
+
+
 
 //primary button
 @mixin primary-button($color: $primary-color, $hover-color: $secondary-color, $border-color: $primary-color, $border-width: 2px) {
