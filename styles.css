@@ -7,10 +7,11 @@
   outline: 0;
 }
 
-.workit-header {
+.bg-img {
   background-image: url("./images/bg-pattern-1.svg"), url("./images/bg-pattern-2.svg");
   background-repeat: no-repeat;
   background-position: left center, right center;
+  padding: 0;
 }
 
 .workit-header {
@@ -18,7 +19,15 @@
   min-height: 730px;
 }
 
-.primary-button {
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 165.35px;
+  padding-top: 57.78px;
+  padding-right: 165.35px;
+}
+
+.primary-btn {
   background-color: hsl(150, 100%, 63%);
   color: hsl(273, 85%, 13%);
   font-family: "manrope", sans-serif;
@@ -31,8 +40,25 @@
   height: 58px;
   border: 2px solid hsl(150, 100%, 63%);
 }
-.primary-button:hover {
+.primary-btn:hover {
   background-color: hsl(273, 85%, 13%);
+  color: hsl(150, 100%, 63%);
+}
+
+.secondary-btn {
+  background-color: hsl(273, 85%, 13%);
+  color: #fff;
+  font-family: "manrope", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 32px;
+  padding: 0px;
+  width: 140px;
+  height: 35px;
+  letter-spacing: -0.18px;
+}
+.secondary-btn:hover {
   color: hsl(150, 100%, 63%);
 }
 

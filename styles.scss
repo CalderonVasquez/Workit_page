@@ -27,19 +27,24 @@ $heading-s-line-height: 40px;
 
 $body-font-size: $base-font-size;
 $body-line-height: 32px;
-
-
 $header-bg: $secondary-color;
+
+// header section starts here
 .workit-header {
     background-color: $header-bg;
     min-height: 730px;
 }
-
-
-
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 165.35px;
+    padding-top: 57.78px;
+    padding-right: 165.35px;
+}
+// header section ends here
 
 //primary button
-@mixin primary-button($color: $primary-color, $hover-color: $secondary-color, $border-color: $primary-color, $border-width: 2px) {
+@mixin primary-btn($color: $primary-color, $hover-color: $secondary-color, $border-color: $primary-color, $border-width: 2px) {
     background-color: $color;
     color: $secondary-color;
     font-family: "manrope", sans-serif;
@@ -57,9 +62,30 @@ $header-bg: $secondary-color;
         color: $primary-color; // Change the font color to $primary-color on hover
     }
 }
+@mixin secondary-btn($color: $color-white, $bg-color: $secondary-color, $border-bottom-color: $primary-color) {
+    background-color: $bg-color;
+    color: $color;
+    font-family: "manrope", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 32px;
+    padding: 0px;
+    width: 140px;
+    height: 35px;
+    letter-spacing: -0.18px;
+    
+    &:hover {
+        color: $primary-color; // Change the font color to $primary-color on hover
+    }
+}
 
 
 
-.primary-button {
-    @include primary-button(); // Uses the default values from the mixin definition
+.primary-btn {
+    @include primary-btn(); // Uses the default values from the mixin definition
+}
+
+.secondary-btn {
+    @include secondary-btn(); // Uses the default values from the mixin definition
 }
