@@ -27,6 +27,16 @@
   padding-right: 165.35px;
 }
 
+.workit-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workit-hero-title {
+  color: #fff;
+}
+
 .primary-btn {
   background-color: hsl(150, 100%, 63%);
   color: hsl(273, 85%, 13%);

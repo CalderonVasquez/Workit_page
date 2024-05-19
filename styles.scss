@@ -41,6 +41,14 @@ $header-bg: $secondary-color;
     padding-top: 57.78px;
     padding-right: 165.35px;
 }
+.workit-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.workit-hero-title{
+    color: $color-white;
+}
 // header section ends here
 
 //primary button
