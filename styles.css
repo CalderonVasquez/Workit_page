@@ -10,8 +10,7 @@
 .bg-img {
   background-image: url("./images/bg-pattern-1.svg"), url("./images/bg-pattern-2.svg");
   background-repeat: no-repeat;
-  background-position: left center, right center;
-  padding: 0;
+  background-position: left, right center;
 }
 
 .workit-header {
@@ -35,6 +34,11 @@
 
 .workit-hero-title {
   color: #fff;
+  font-size: 80px;
+  line-height: 80px;
+  text-align: center;
+  padding-top: 146px;
+  padding-bottom: 37px;
 }
 
 .primary-btn {
@@ -67,6 +71,11 @@
   width: 140px;
   height: 35px;
   letter-spacing: -0.18px;
+  border: none;
+  text-decoration: underline;
+  text-decoration-color: hsl(150, 100%, 63%);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
 }
 .secondary-btn:hover {
   color: hsl(150, 100%, 63%);

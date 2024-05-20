@@ -48,6 +48,11 @@ $header-bg: $secondary-color;
 }
 .workit-hero-title{
     color: $color-white;
+    font-size: $heading-l-size;
+    line-height: $heading-l-line-height;
+    text-align: center;
+    padding-top: 146px;
+    padding-bottom: 37px;
 }
 // header section ends here
 
@@ -70,6 +75,9 @@ $header-bg: $secondary-color;
         color: $primary-color; // Change the font color to $primary-color on hover
     }
 }
+// .hero-btn {
+//     padding-top: 37px;
+// }
 @mixin secondary-btn($color: $color-white, $bg-color: $secondary-color, $border-bottom-color: $primary-color) {
     background-color: $bg-color;
     color: $color;
@@ -82,6 +90,12 @@ $header-bg: $secondary-color;
     width: 140px;
     height: 35px;
     letter-spacing: -0.18px;
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: $border-bottom-color;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;;
+
     
     &:hover {
         color: $primary-color; // Change the font color to $primary-color on hover
