@@ -29,6 +29,50 @@ $body-font-size: $base-font-size;
 $body-line-height: 32px;
 $header-bg: $secondary-color;
 
+//primary button
+@mixin primary-btn($color: $primary-color, $hover-color: $secondary-color, $border-color: $primary-color, $border-width: 2px) {
+    background-color: $color;
+    color: $secondary-color;
+    font-family: "manrope", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 32px;
+    padding: 13px 25px;
+    width: 190px;
+    height: 58px;
+    border: $border-width solid $border-color;
+
+    &:hover {
+        background-color: $hover-color;
+        color: $primary-color; // Change the font color to $primary-color on hover
+    }
+}
+
+// secondary button
+@mixin secondary-btn($color: $color-white, $bg-color: $secondary-color, $border-bottom-color: $primary-color) {
+    background-color: $bg-color;
+    color: $color;
+    font-family: "manrope", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 32px;
+    padding: 0px;
+    width: 140px;
+    height: 35px;
+    letter-spacing: -0.18px;
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: $border-bottom-color;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+    
+    &:hover {
+        color: $primary-color; // Change the font color to $primary-color on hover
+    }
+}
+
 // header section starts here
 .workit-header {
     background-color: $header-bg;
@@ -54,54 +98,12 @@ $header-bg: $secondary-color;
     padding-top: 146px;
     padding-bottom: 37px;
 }
+.hero-img {
+    width: 767px;
+    height: 441px;
+    padding: 50px;
+}
 // header section ends here
-
-//primary button
-@mixin primary-btn($color: $primary-color, $hover-color: $secondary-color, $border-color: $primary-color, $border-width: 2px) {
-    background-color: $color;
-    color: $secondary-color;
-    font-family: "manrope", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 32px;
-    padding: 13px 25px;
-    width: 190px;
-    height: 58px;
-    border: $border-width solid $border-color;
-
-    &:hover {
-        background-color: $hover-color;
-        color: $primary-color; // Change the font color to $primary-color on hover
-    }
-}
-// .hero-btn {
-//     padding-top: 37px;
-// }
-@mixin secondary-btn($color: $color-white, $bg-color: $secondary-color, $border-bottom-color: $primary-color) {
-    background-color: $bg-color;
-    color: $color;
-    font-family: "manrope", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: left;
-    line-height: 32px;
-    padding: 0px;
-    width: 140px;
-    height: 35px;
-    letter-spacing: -0.18px;
-    border: none;
-    text-decoration: underline;
-    text-decoration-color: $border-bottom-color;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 6px;;
-
-    
-    &:hover {
-        color: $primary-color; // Change the font color to $primary-color on hover
-    }
-}
-
 
 
 .primary-btn {
