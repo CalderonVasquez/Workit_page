@@ -39,8 +39,8 @@ $header-bg: $secondary-color;
     text-align: center;
     line-height: 32px;
     padding: 13px 25px;
-    width: 190px;
-    height: 58px;
+    width: 161px;
+    height: 61px;
     border: $border-width solid $border-color;
 
     &:hover {
@@ -77,6 +77,8 @@ $header-bg: $secondary-color;
 .workit-header {
     background-color: $header-bg;
     min-height: 730px;
+    width: 1440px;
+    max-width: 100%;
 }
 .logo-container {
     display: flex;
@@ -98,10 +100,18 @@ $header-bg: $secondary-color;
     padding-top: 146px;
     padding-bottom: 37px;
 }
+.workit-hero-title span {
+    text-decoration: underline;
+    text-decoration-color: $primary-color;
+}
 .hero-img {
     width: 767px;
     height: 441px;
-    padding: 50px;
+    padding-top: 50px;
+}
+.bg-img1 {
+    background-repeat: no-repeat;
+    background-position: left;
 }
 // header section ends here
 

@@ -7,9 +7,20 @@
   outline: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .workit-header {
   background-color: hsl(273, 85%, 13%);
   min-height: 730px;
+  width: 1440px;
+  max-width: 100%;
 }
 
 .logo-container {
@@ -35,10 +46,20 @@
   padding-bottom: 37px;
 }
 
+.workit-hero-title span {
+  text-decoration: underline;
+  text-decoration-color: hsl(150, 100%, 63%);
+}
+
 .hero-img {
   width: 767px;
   height: 441px;
-  padding: 50px;
+  padding-top: 50px;
+}
+
+.bg-img1 {
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .primary-btn {
@@ -50,8 +71,8 @@
   text-align: center;
   line-height: 32px;
   padding: 13px 25px;
-  width: 190px;
-  height: 58px;
+  width: 161px;
+  height: 61px;
   border: 2px solid hsl(150, 100%, 63%);
 }
 .primary-btn:hover {
