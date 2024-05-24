@@ -76,7 +76,7 @@ $header-bg: $secondary-color;
 // header section starts here
 .workit-header {
     background-color: $header-bg;
-    min-height: 730px;
+    min-height: 73vh;
     width: 1440px;
     max-width: 100%;
 }
@@ -109,12 +109,20 @@ $header-bg: $secondary-color;
     height: 441px;
     padding-top: 50px;
 }
-.bg-img1 {
-    background-repeat: no-repeat;
-    background-position: left;
-}
 // header section ends here
-
+// workit details section
+.workit-details-section {
+    max-width: 100%;
+    background-color: $light-gray;
+    min-height: 96vh;
+    width: 1440px;
+    flex-basis: 33%;
+}
+.workit-details-container {
+    display: flex;
+    padding-top: 16rem;
+    width: 1114px;
+}
 
 .primary-btn {
     @include primary-btn(); // Uses the default values from the mixin definition
