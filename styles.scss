@@ -96,6 +96,7 @@ $header-bg: $secondary-color;
     color: $color-white;
     font-size: $heading-l-size;
     line-height: $heading-l-line-height;
+    font-family: $font-family-heading;
     text-align: center;
     padding-top: 146px;
     padding-bottom: 37px;
@@ -116,12 +117,49 @@ $header-bg: $secondary-color;
     background-color: $light-gray;
     min-height: 96vh;
     width: 1440px;
-    flex-basis: 33%;
 }
 .workit-details-container {
     display: flex;
     padding-top: 16rem;
-    width: 1114px;
+    padding-left: 10.313rem;
+    padding-right: 10.063rem;
+    align-items: center;
+    gap: 5rem;
+}
+
+.workit-detail {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+}
+
+.workit-detail-number{
+    font-size: 24px;
+    text-align: center;
+    border: .5px solid $dark-gray;
+    color: $secondary-color;
+    border-radius: 50%;
+    line-height: 40px;
+    padding: 8px 23.5px;
+    width: 56px;
+    height: 56px;
+}
+
+.workit-detail-content {
+    text-align: center;
+    padding-top: 28px;
+    font-size: $base-font-size;
+    font-family: $font-family-body;
+    color: $secondary-color;
+}
+.workit-detail-title {
+    text-align: center;
+    padding-top: 56px;
+    font-size: $heading-s-size;
+    line-height: $heading-s-line-height;
+    font-family: $font-family-heading;
+    color: $secondary-color
 }
 
 .primary-btn {
