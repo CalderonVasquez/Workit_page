@@ -116,6 +116,47 @@ img {
   color: hsl(273, 85%, 13%);
 }
 
+.workit-founder-section {
+  display: flex;
+  align-items: center;
+  width: 1112px;
+  height: 647.74px;
+}
+
+.workit-founder-img {
+  width: 477px;
+  height: 477px;
+}
+
+.workit-founder-card {
+  width: 730px;
+  height: 413px;
+  background-color: hsl(273, 85%, 13%);
+}
+
+.workit-card-title {
+  font-family: "Fraunces144", serif;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: left;
+  padding-top: 4rem;
+  padding-left: 4.063rem;
+  padding-bottom: 2rem;
+  padding-left: 4.063rem;
+  color: #fff;
+}
+
+.workit-card-content {
+  color: #fff;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 2rem;
+  text-align: left;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+}
+
 .primary-btn {
   background-color: hsl(150, 100%, 63%);
   color: hsl(273, 85%, 13%);
@@ -153,6 +194,24 @@ img {
   text-underline-offset: 6px;
 }
 .secondary-btn:hover {
+  color: hsl(150, 100%, 63%);
+}
+
+.primary-card-btn {
+  background-color: hsl(150, 100%, 63%);
+  color: hsl(273, 85%, 13%);
+  font-family: "manrope", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  padding: 13px 25px;
+  width: 161px;
+  height: 61px;
+  border: 2px solid hsl(150, 100%, 63%);
+}
+.primary-card-btn:hover {
+  background-color: hsl(273, 85%, 13%);
   color: hsl(150, 100%, 63%);
 }
 

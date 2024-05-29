@@ -49,6 +49,27 @@ $header-bg: $secondary-color;
     }
 }
 
+// primary-card-btn
+@mixin primary-card-btn($color: $primary-color, $hover-color: $secondary-color, $border-color: $primary-color) {
+    background-color: $color;
+    color: $secondary-color;
+    font-family: "manrope", sans-serif;
+    font-size: 18px;
+    padding: 0.813rem 1.563rem;
+    margin-left: 4rem;
+    font-weight: bold;
+    text-align: center;
+    // line-height: 32px;
+    width: 191px;
+    height: 58px;
+    // border: $border-width solid $border-color;
+
+    &:hover {
+        background-color: $hover-color;
+        color: $primary-color; // Change the font color to $primary-color on hover
+    }
+}
+
 // secondary button
 @mixin secondary-btn($color: $color-white, $bg-color: $secondary-color, $border-bottom-color: $primary-color) {
     background-color: $bg-color;
@@ -111,6 +132,7 @@ $header-bg: $secondary-color;
     padding-top: 50px;
 }
 // header section ends here
+
 // workit details section
 .workit-details-section {
     max-width: 100%;
@@ -161,6 +183,49 @@ $header-bg: $secondary-color;
     font-family: $font-family-heading;
     color: $secondary-color
 }
+//workit details section end  
+
+// workit founder section starts here
+.workit-founder-section {
+    display: flex;
+    align-items: center;
+    width: 1112px;
+    height: 647.74px
+}
+
+.workit-founder-img {
+    width: 477px;
+    height: 477px;
+}
+
+.workit-founder-card {
+    width: 730px;
+    height: 413px;
+    background-color: $secondary-color;
+}
+
+.workit-card-title {
+    font-family: $font-family-heading;
+    font-size: $heading-m-size;
+    line-height: $heading-m-line-height;
+    text-align: left;
+    padding-top: 4rem;
+    padding-left: 4.063rem;
+    padding-bottom: 2rem;
+    padding-left: 4.063rem;
+    color: $color-white;
+}
+
+.workit-card-content{
+    color: $color-white;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+    text-align: left;
+    font-family: $font-family-body;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+}
 
 .primary-btn {
     @include primary-btn(); // Uses the default values from the mixin definition
@@ -168,4 +233,8 @@ $header-bg: $secondary-color;
 
 .secondary-btn {
     @include secondary-btn(); // Uses the default values from the mixin definition
+}
+
+.primary-card-btn {
+    @include primary-btn(); // Uses the default values from the mixin definition
 }
