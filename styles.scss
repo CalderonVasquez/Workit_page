@@ -50,19 +50,16 @@ $header-bg: $secondary-color;
 }
 
 // primary-card-btn
-@mixin primary-card-btn($color: $primary-color, $hover-color: $secondary-color, $border-color: $primary-color) {
+@mixin primary-card-btn($color: $primary-color, $hover-color: $secondary-color, $border-color: $primary-color, $border-width: 2px) {
     background-color: $color;
     color: $secondary-color;
     font-family: "manrope", sans-serif;
     font-size: 18px;
-    padding: 0.813rem 1.563rem;
-    margin-left: 4rem;
+    // padding:1.563rem 0.813rem ;
     font-weight: bold;
     text-align: center;
-    // line-height: 32px;
-    width: 191px;
-    height: 58px;
-    // border: $border-width solid $border-color;
+    letter-spacing: -0.18px;
+    border: $border-width solid $border-color;
 
     &:hover {
         background-color: $hover-color;
@@ -190,18 +187,32 @@ $header-bg: $secondary-color;
     display: flex;
     align-items: center;
     width: 1112px;
-    height: 647.74px
+    height: 647.74px;
+    margin-top: 6.875rem;
+    margin-left: 10.188rem;
+    margin-right: 10.313rem;
+    // padding-bottom: 10.829rem;
+    border: 2px solid #ccc;
 }
 
 .workit-founder-img {
     width: 477px;
     height: 477px;
+    margin-bottom: 10.671rem;
 }
 
 .workit-founder-card {
     width: 730px;
     height: 413px;
+    margin-top: 10.813rem;
+    margin-right: 0;
+    margin-left: -6rem;
     background-color: $secondary-color;
+    padding-top: 4rem;
+    padding-left: 4.063rem;
+    padding-bottom: 2rem;
+    padding-right: 4.063rem;
+    z-index: 4;
 }
 
 .workit-card-title {
@@ -209,23 +220,22 @@ $header-bg: $secondary-color;
     font-size: $heading-m-size;
     line-height: $heading-m-line-height;
     text-align: left;
-    padding-top: 4rem;
-    padding-left: 4.063rem;
     padding-bottom: 2rem;
-    padding-left: 4.063rem;
     color: $color-white;
 }
 
 .workit-card-content{
     color: $color-white;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-bottom: 2rem;
     text-align: left;
     font-family: $font-family-body;
     font-size: $body-font-size;
     line-height: $body-line-height;
+    padding-bottom: 2.094rem;
 }
+
+// .primary-card-btn {
+//     margin-left: auto;
+// }
 
 .primary-btn {
     @include primary-btn(); // Uses the default values from the mixin definition
