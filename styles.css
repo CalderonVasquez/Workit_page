@@ -23,6 +23,14 @@ img {
   width: 100%;
 }
 
+.bg-img-small {
+  background-image: url(./images/bg-pattern-3.svg);
+  background-repeat: no-repeat;
+  background-position: right 10% bottom -50%;
+  width: 100%;
+  z-index: 3;
+}
+
 .workit-header {
   background-color: hsl(273, 85%, 13%);
   min-height: 73vh;
@@ -124,7 +132,6 @@ img {
   margin-top: 6.875rem;
   margin-left: 10.188rem;
   margin-right: 10.313rem;
-  border: 2px solid #ccc;
 }
 
 .workit-founder-img {
@@ -135,7 +142,7 @@ img {
 
 .workit-founder-card {
   width: 730px;
-  height: 413px;
+  height: 474.74px;
   margin-top: 10.813rem;
   margin-right: 0;
   margin-left: -6rem;
@@ -163,6 +170,26 @@ img {
   font-size: 18px;
   line-height: 32px;
   padding-bottom: 2.094rem;
+}
+
+.primary-card-btn {
+  padding: 0.813rem 1.563rem;
+  font-size: 18px;
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(150, 100%, 63%);
+  color: hsl(273, 85%, 13%);
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid hsl(150, 100%, 63%);
+}
+
+.primary-card-btn:hover {
+  background-color: hsl(273, 85%, 13%);
+  color: hsl(150, 100%, 63%);
+}
+
+.workit-footer {
+  margin: 3.752rem 41.438rem 6.875rem 41.313rem;
 }
 
 .primary-btn {
@@ -202,24 +229,6 @@ img {
   text-underline-offset: 6px;
 }
 .secondary-btn:hover {
-  color: hsl(150, 100%, 63%);
-}
-
-.primary-card-btn {
-  background-color: hsl(150, 100%, 63%);
-  color: hsl(273, 85%, 13%);
-  font-family: "manrope", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 32px;
-  padding: 13px 25px;
-  width: 161px;
-  height: 61px;
-  border: 2px solid hsl(150, 100%, 63%);
-}
-.primary-card-btn:hover {
-  background-color: hsl(273, 85%, 13%);
   color: hsl(150, 100%, 63%);
 }
 
