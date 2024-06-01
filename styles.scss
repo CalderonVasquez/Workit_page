@@ -174,6 +174,7 @@ $header-bg: $secondary-color;
     margin-top: 6.875rem;
     margin-left: 10.188rem;
     margin-right: 10.313rem;
+    border: 2px solid blue;
 }
 
 .workit-founder-img {
@@ -184,17 +185,18 @@ $header-bg: $secondary-color;
 
 .workit-founder-card {
     width: 730px;
-    height: 474.74px;
+    height: 413px;
     margin-top: 10.813rem;
     margin-right: 0;
     margin-left: -6rem;
-    // margin-bottom: 3.859rem;
+    margin-bottom: 3.859rem;
     background-color: $secondary-color;
     padding-top: 4rem;
     padding-left: 4.063rem;
     padding-bottom: 2rem;
     padding-right: 4.063rem;
-    z-index: 4;
+    position: relative;
+    // z-index: 4;
 }
 
 .workit-card-title {
@@ -234,7 +236,20 @@ $header-bg: $secondary-color;
 
 //footer starts here
 .workit-footer{
+    width: 116px;
+    height: 102.22px;
     margin: 3.752rem 41.438rem 6.875rem 41.313rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    padding-bottom: 3.601rem;
+}
+
+.footer-social-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .primary-btn {
