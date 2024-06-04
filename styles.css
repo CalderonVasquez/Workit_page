@@ -25,9 +25,16 @@ img {
 
 .bg-img-small {
   background-image: url(./images/bg-pattern-3.svg);
+  /* Replace with your image path */
   background-repeat: no-repeat;
   background-position: right 10% bottom -40%;
-  position: absolute;
+  /* Adjust position as needed */
+  background-size: auto;
+  /* Important change */
+  height: 100%;
+  /* Adjust height for desired overlap (experiment) */
+  padding: 20px;
+  /* Optional padding for content */
 }
 
 .workit-header {
@@ -131,7 +138,6 @@ img {
   margin-top: 6.875rem;
   margin-left: 10.188rem;
   margin-right: 10.313rem;
-  border: 2px solid blue;
 }
 
 .workit-founder-img {
@@ -141,6 +147,7 @@ img {
 }
 
 .workit-founder-card {
+  height: 200px;
   width: 730px;
   height: 413px;
   margin-top: 10.813rem;

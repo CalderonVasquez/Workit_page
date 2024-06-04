@@ -174,7 +174,6 @@ $header-bg: $secondary-color;
     margin-top: 6.875rem;
     margin-left: 10.188rem;
     margin-right: 10.313rem;
-    border: 2px solid blue;
 }
 
 .workit-founder-img {
@@ -184,6 +183,7 @@ $header-bg: $secondary-color;
 }
 
 .workit-founder-card {
+    height: 200px;
     width: 730px;
     height: 413px;
     margin-top: 10.813rem;
