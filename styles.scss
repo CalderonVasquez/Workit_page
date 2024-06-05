@@ -78,8 +78,10 @@ $header-bg: $secondary-color;
 .workit-header {
     background-color: $header-bg;
     min-height: 73vh;
-    width: 1440px;
-    max-width: 100%;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom-right-radius: 100% 15%;
+    border-bottom-left-radius: 100% 15%;
 }
 .logo-container {
     display: flex;
@@ -92,6 +94,7 @@ $header-bg: $secondary-color;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .workit-hero-title{
     color: $color-white;
@@ -99,7 +102,7 @@ $header-bg: $secondary-color;
     line-height: $heading-l-line-height;
     font-family: $font-family-heading;
     text-align: center;
-    padding-top: 146px;
+    padding-top: 100px;
     padding-bottom: 37px;
 }
 .workit-hero-title span {
@@ -110,6 +113,11 @@ $header-bg: $secondary-color;
     width: 767px;
     height: 441px;
     padding-top: 50px;
+    position: absolute;
+   
+    margin: auto;
+    top: 288px;
+      
 }
 // header section ends here
 
