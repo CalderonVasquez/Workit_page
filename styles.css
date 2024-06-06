@@ -39,6 +39,7 @@ img {
 
 .workit-header {
   background-color: hsl(273, 85%, 13%);
+  height: 730px;
   min-height: 73vh;
   width: 100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -67,8 +68,8 @@ img {
   line-height: 80px;
   font-family: "Fraunces144", serif;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 37px;
+  padding-top: 3.438rem;
+  padding-bottom: 2.313rem;
 }
 
 .workit-hero-title span {
@@ -79,10 +80,9 @@ img {
 .hero-img {
   width: 767px;
   height: 441px;
-  padding-top: 50px;
-  position: absolute;
-  margin: auto;
-  top: 288px;
+  position: relative;
+  top: 50px;
+  left: 40px;
 }
 
 .workit-details-section {
