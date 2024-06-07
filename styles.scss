@@ -124,21 +124,21 @@ $header-bg: $secondary-color;
     max-width: 100%;
     background-color: $light-gray;
     min-height: 96vh;
-    width: 1440px;
+    border-bottom-right-radius: 100% 15%;
+    border-bottom-left-radius: 100% 15%;
 }
 .workit-details-container {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     padding-top: 16rem;
     padding-left: 10.313rem;
     padding-right: 10.063rem;
-    align-items: center;
-    gap: 5rem;
+    gap: 1.625rem;
 }
 
 .workit-detail {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
 }
 
@@ -160,6 +160,7 @@ $header-bg: $secondary-color;
     font-size: $base-font-size;
     font-family: $font-family-body;
     color: $secondary-color;
+    text-align: center;
 }
 .workit-detail-title {
     text-align: center;
@@ -201,7 +202,6 @@ $header-bg: $secondary-color;
     padding-left: 4.063rem;
     padding-bottom: 2rem;
     padding-right: 4.063rem;
-    position: relative;
     // z-index: 4;
 }
 

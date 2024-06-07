@@ -25,16 +25,10 @@ img {
 
 .bg-img-small {
   background-image: url(./images/bg-pattern-3.svg);
-  /* Replace with your image path */
   background-repeat: no-repeat;
   background-position: right 10% bottom -40%;
-  /* Adjust position as needed */
   background-size: auto;
-  /* Important change */
   height: 100%;
-  /* Adjust height for desired overlap (experiment) */
-  padding: 20px;
-  /* Optional padding for content */
 }
 
 .workit-header {
@@ -89,16 +83,17 @@ img {
   max-width: 100%;
   background-color: #fcf8ff;
   min-height: 96vh;
-  width: 1440px;
+  border-bottom-right-radius: 100% 15%;
+  border-bottom-left-radius: 100% 15%;
 }
 
 .workit-details-container {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   padding-top: 16rem;
   padding-left: 10.313rem;
   padding-right: 10.063rem;
-  align-items: center;
-  gap: 5rem;
+  gap: 1.625rem;
 }
 
 .workit-detail {
@@ -125,6 +120,7 @@ img {
   font-size: 18px;
   font-family: "Manrope", sans-serif;
   color: hsl(273, 85%, 13%);
+  text-align: center;
 }
 
 .workit-detail-title {
@@ -165,7 +161,6 @@ img {
   padding-left: 4.063rem;
   padding-bottom: 2rem;
   padding-right: 4.063rem;
-  position: relative;
 }
 
 .workit-card-title {

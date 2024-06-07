@@ -7,16 +7,10 @@
 
 .bg-img-small {
    background-image: url(./images/bg-pattern-3.svg);
-   /* Replace with your image path */
    background-repeat: no-repeat;
    background-position: right 10% bottom -40%;
-   /* Adjust position as needed */
    background-size: auto;
-   /* Important change */
    height: 100%;
-   /* Adjust height for desired overlap (experiment) */
-   padding: 20px;
-   /* Optional padding for content */
 }
 
 // .bg-img-small {
