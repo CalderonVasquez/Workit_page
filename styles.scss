@@ -191,6 +191,8 @@ $header-bg: $secondary-color;
 }
 
 .workit-founder-card {
+    display: flex;
+    flex-direction: column;
     height: 200px;
     width: 730px;
     height: 413px;
@@ -225,7 +227,8 @@ $header-bg: $secondary-color;
 }
 
 .primary-card-btn {
-    padding: 0.813rem 1.563rem;
+    width: 11.875rem;
+    height: 3.625rem;
     font-size: $body-font-size;
     font-family: $font-family-body;
     background-color: $primary-color;
@@ -233,31 +236,59 @@ $header-bg: $secondary-color;
     font-weight: bold;
     text-align: center;
     border: 2px solid $primary-color;
+    padding-top: 0.813rem;
+    padding-bottom: 0.813rem;
+    cursor: pointer;
 }
 
 .primary-card-btn:hover {
     background-color: $secondary-color;
     color: $primary-color;
 }
+
+.bg-img-small {
+    position: relative;
+    bottom: 80px;
+    left: 215px;
+}
 //founder section ends here
 
 //footer starts here
-.workit-footer{
+.workit-footer {
     width: 116px;
     height: 102.22px;
     margin: 3.752rem 41.438rem 6.875rem 41.313rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-logo {
+    padding-left: 10.35px ;
+    padding-right: 9.89px;
     padding-bottom: 3.601rem;
 }
 
 .footer-social-container {
     display: flex;
     justify-content: space-between;
+
 }
+
+.footer-social-img {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+// .footer-social-img:hover {
+//     background-color: $secondary-color;
+// }
+
+// .footer-social-img:hover {
+//     color: $color-white;
+// }
 
 .primary-btn {
     @include primary-btn(); // Uses the default values from the mixin definition
