@@ -61,12 +61,17 @@ h6 {
   border-bottom-left-radius: 100% 15%;
 }
 
+h1 {
+  font-size: clamp(2.5rem, 4vw, 5rem);
+  /* Adjust values as needed */
+}
+
 .logo-container {
   display: flex;
   justify-content: space-between;
-  padding-left: 165.35px;
-  padding-top: 57.78px;
-  padding-right: 165.35px;
+  padding-left: 10.334em;
+  padding-top: 3.611em;
+  padding-right: 10.334em;
 }
 
 .workit-hero {
@@ -78,8 +83,8 @@ h6 {
 
 .workit-hero-title {
   color: #fff;
-  font-size: 80px;
-  line-height: 80px;
+  font-size: 5rem;
+  line-height: 5rem;
   font-family: "Fraunces144", serif;
   text-align: center;
   padding-top: 3.438rem;
@@ -92,8 +97,8 @@ h6 {
 }
 
 .hero-img {
-  width: 767px;
-  height: 441px;
+  max-width: 767px;
+  height: auto;
   position: relative;
   top: 50px;
   left: 40px;
@@ -124,21 +129,21 @@ h6 {
 }
 
 .workit-detail-number {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center;
   border: 0.5px solid #584062;
   color: hsl(273, 85%, 13%);
   border-radius: 50%;
-  line-height: 40px;
-  padding: 8px 23.5px;
-  width: 56px;
-  height: 56px;
+  line-height: 2.5rem;
+  padding: 0.5rem 1.469rem;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 .workit-detail-content {
   text-align: center;
-  padding-top: 28px;
-  font-size: 18px;
+  padding-top: 1.75rem;
+  font-size: 1.125rem;
   font-family: "Manrope", sans-serif;
   color: hsl(273, 85%, 13%);
   text-align: center;
@@ -146,9 +151,9 @@ h6 {
 
 .workit-detail-title {
   text-align: center;
-  padding-top: 56px;
-  font-size: 32px;
-  line-height: 40px;
+  padding-top: 3.5rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   font-family: "Fraunces144", serif;
   color: hsl(273, 85%, 13%);
 }
@@ -156,40 +161,36 @@ h6 {
 .workit-founder-section {
   display: flex;
   align-items: center;
-  width: 1112px;
-  height: 647.74px;
+  max-width: 1112px;
+  min-height: 647.74px;
   margin-top: 6.875rem;
   margin-left: 10.188rem;
   margin-right: 10.313rem;
 }
 
 .workit-founder-img {
-  width: 477px;
-  height: 477px;
+  width: 100%;
+  height: auto;
   margin-bottom: 10.671rem;
 }
 
 .workit-founder-card {
   display: flex;
+  align-items: flex-start;
+  flex-grow: 1;
   flex-direction: column;
-  height: 200px;
-  width: 730px;
+  max-width: 730px;
   height: 413px;
-  margin-top: 10.813rem;
-  margin-right: 0;
   margin-left: -6rem;
   margin-bottom: 3.859rem;
   background-color: hsl(273, 85%, 13%);
-  padding-top: 4rem;
-  padding-left: 4.063rem;
-  padding-bottom: 2rem;
-  padding-right: 4.063rem;
+  padding: 4rem 2rem 4.063rem 4.063rem;
 }
 
 .workit-card-title {
   font-family: "Fraunces144", serif;
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 3.5rem;
+  line-height: 4rem;
   text-align: left;
   padding-bottom: 2rem;
   color: #fff;
@@ -199,15 +200,15 @@ h6 {
   color: #fff;
   text-align: left;
   font-family: "Manrope", sans-serif;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 1.125rem;
+  line-height: 2rem;
   padding-bottom: 2.094rem;
 }
 
 .primary-card-btn {
   width: 11.875rem;
   height: 3.625rem;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "Manrope", sans-serif;
   background-color: hsl(150, 100%, 63%);
   color: hsl(273, 85%, 13%);
@@ -227,11 +228,11 @@ h6 {
 .bg-img-small {
   position: relative;
   bottom: 80px;
-  left: 215px;
+  left: 375px;
 }
 
 .workit-footer {
-  width: 116px;
+  max-width: 116px;
   height: 102.22px;
   margin: 3.752rem 41.438rem 6.875rem 41.313rem;
   display: flex;
@@ -241,8 +242,8 @@ h6 {
 }
 
 .footer-logo {
-  padding-left: 10.35px;
-  padding-right: 9.89px;
+  padding-left: 0.647rem;
+  padding-right: 0.618rem;
   padding-bottom: 3.601rem;
 }
 
@@ -253,7 +254,7 @@ h6 {
 
 .footer-social-img {
   display: block;
-  width: 20px;
+  max-width: 20px;
   height: 20px;
 }
 
@@ -261,14 +262,14 @@ h6 {
   background-color: hsl(150, 100%, 63%);
   color: hsl(273, 85%, 13%);
   font-family: "manrope", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   text-align: center;
-  line-height: 32px;
-  padding: 13px 25px;
-  width: 161px;
-  height: 61px;
-  border: 2px solid hsl(150, 100%, 63%);
+  line-height: 2em;
+  padding: 0.813em 1.563em;
+  width: 10.063em;
+  height: 3.813em;
+  border: 0.125em solid hsl(150, 100%, 63%);
 }
 .primary-btn:hover {
   background-color: hsl(273, 85%, 13%);
@@ -279,19 +280,19 @@ h6 {
   background-color: hsl(273, 85%, 13%);
   color: #fff;
   font-family: "manrope", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   text-align: left;
-  line-height: 32px;
+  line-height: 2rem;
   padding: 0px;
-  width: 140px;
-  height: 35px;
-  letter-spacing: -0.18px;
+  width: 8.75em;
+  height: 2.188em;
+  letter-spacing: -0.011em;
   border: none;
   text-decoration: underline;
   text-decoration-color: hsl(150, 100%, 63%);
-  text-decoration-thickness: 3px;
-  text-underline-offset: 6px;
+  text-decoration-thickness: 0.188em;
+  text-underline-offset: 0.375em;
 }
 .secondary-btn:hover {
   color: hsl(150, 100%, 63%);

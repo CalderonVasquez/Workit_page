@@ -14,33 +14,33 @@ $font-family-heading: "Fraunces144", serif;
 $font-family-body: "Manrope", sans-serif;
 
 // project font sizes and line-heights
-$base-font-size: 18px; // You can adjust this for your preference
+$base-font-size: 1.125rem; // You can adjust this for your preference
 
-$heading-l-size: 80px;
-$heading-l-line-height: 80px;
+$heading-l-size: 5rem;
+$heading-l-line-height: 5rem;
 
-$heading-m-size: 56px;
-$heading-m-line-height: 64px;
+$heading-m-size: 3.5rem;
+$heading-m-line-height: 4rem;
 
-$heading-s-size: 32px;
-$heading-s-line-height: 40px;
+$heading-s-size: 2rem;
+$heading-s-line-height: 2.5rem;
 
 $body-font-size: $base-font-size;
-$body-line-height: 32px;
+$body-line-height: 2rem;
 $header-bg: $secondary-color;
 
 //primary button
-@mixin primary-btn($color: $primary-color, $hover-color: $secondary-color, $border-color: $primary-color, $border-width: 2px) {
+@mixin primary-btn($color: $primary-color, $hover-color: $secondary-color, $border-color: $primary-color, $border-width: 0.125em) {
     background-color: $color;
     color: $secondary-color;
     font-family: "manrope", sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
     text-align: center;
-    line-height: 32px;
-    padding: 13px 25px;
-    width: 161px;
-    height: 61px;
+    line-height: 2em;
+    padding: 0.813em 1.563em;
+    width: 10.063em;
+    height: 3.813em;
     border: $border-width solid $border-color;
 
     &:hover {
@@ -55,19 +55,19 @@ $header-bg: $secondary-color;
     background-color: $bg-color;
     color: $color;
     font-family: "manrope", sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
     text-align: left;
-    line-height: 32px;
+    line-height: 2rem;
     padding: 0px;
-    width: 140px;
-    height: 35px;
-    letter-spacing: -0.18px;
+    width: 8.75em;
+    height: 2.188em;
+    letter-spacing: -0.011em;
     border: none;
     text-decoration: underline;
     text-decoration-color: $border-bottom-color;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 6px;
+    text-decoration-thickness: 0.188em;
+    text-underline-offset: 0.375em;
     
     &:hover {
         color: $primary-color; // Change the font color to $primary-color on hover
@@ -84,12 +84,19 @@ $header-bg: $secondary-color;
     border-bottom-right-radius: 100% 15%;
     border-bottom-left-radius: 100% 15%;
 }
+
+h1 {
+    font-size: clamp(2.5rem, 4vw, 5rem);
+    /* Adjust values as needed */
+}
+
+
 .logo-container {
     display: flex;
     justify-content: space-between;
-    padding-left: 165.35px;
-    padding-top: 57.78px;
-    padding-right: 165.35px;
+    padding-left: 10.334em;
+    padding-top: 3.611em;
+    padding-right: 10.334em;
 }
 .workit-hero {
     display: flex;
@@ -111,8 +118,8 @@ $header-bg: $secondary-color;
     text-decoration-color: $primary-color;
 }
 .hero-img {
-    width: 767px;
-    height: 441px;
+    max-width: 767px;
+    height: auto;
     position: relative;
     top: 50px;
     left: 40px
@@ -144,20 +151,20 @@ $header-bg: $secondary-color;
 }
 
 .workit-detail-number{
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     border: .5px solid $dark-gray;
     color: $secondary-color;
     border-radius: 50%;
-    line-height: 40px;
-    padding: 8px 23.5px;
-    width: 56px;
-    height: 56px;
+    line-height: 2.5rem;
+    padding: 0.5rem 1.469rem;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 .workit-detail-content {
     text-align: center;
-    padding-top: 28px;
+    padding-top: 1.75rem;
     font-size: $base-font-size;
     font-family: $font-family-body;
     color: $secondary-color;
@@ -165,7 +172,7 @@ $header-bg: $secondary-color;
 }
 .workit-detail-title {
     text-align: center;
-    padding-top: 56px;
+    padding-top: 3.5rem;
     font-size: $heading-s-size;
     line-height: $heading-s-line-height;
     font-family: $font-family-heading;
@@ -177,35 +184,30 @@ $header-bg: $secondary-color;
 .workit-founder-section {
     display: flex;
     align-items: center;
-    width: 1112px;
-    height: 647.74px;
+    max-width: 1112px;
+    min-height: 647.74px;
     margin-top: 6.875rem;
     margin-left: 10.188rem;
     margin-right: 10.313rem;
 }
 
 .workit-founder-img {
-    width: 477px;
-    height: 477px;
+    width: 100%;
+    height: auto;
     margin-bottom: 10.671rem;
 }
 
 .workit-founder-card {
     display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
     flex-direction: column;
-    height: 200px;
-    width: 730px;
+    max-width: 730px;
     height: 413px;
-    margin-top: 10.813rem;
-    margin-right: 0;
     margin-left: -6rem;
     margin-bottom: 3.859rem;
     background-color: $secondary-color;
-    padding-top: 4rem;
-    padding-left: 4.063rem;
-    padding-bottom: 2rem;
-    padding-right: 4.063rem;
-    // z-index: 4;
+    padding: 4rem 2rem 4.063rem 4.063rem;
 }
 
 .workit-card-title {
@@ -249,13 +251,13 @@ $header-bg: $secondary-color;
 .bg-img-small {
     position: relative;
     bottom: 80px;
-    left: 215px;
+    left: 375px;
 }
 //founder section ends here
 
 //footer starts here
 .workit-footer {
-    width: 116px;
+    max-width: 116px;
     height: 102.22px;
     margin: 3.752rem 41.438rem 6.875rem 41.313rem;
     display: flex;
@@ -265,8 +267,8 @@ $header-bg: $secondary-color;
 }
 
 .footer-logo {
-    padding-left: 10.35px ;
-    padding-right: 9.89px;
+    padding-left: 0.647rem;
+    padding-right: 0.618rem;
     padding-bottom: 3.601rem;
 }
 
@@ -278,7 +280,7 @@ $header-bg: $secondary-color;
 
 .footer-social-img {
     display: block;
-    width: 20px;
+    max-width: 20px;
     height: 20px;
 }
 
