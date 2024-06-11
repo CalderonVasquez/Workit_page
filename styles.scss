@@ -258,12 +258,13 @@ h1 {
 //footer starts here
 .workit-footer {
     max-width: 116px;
-    height: 102.22px;
+    // height: 102.22px;
     margin: 3.752rem 41.438rem 6.875rem 41.313rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
+    // align-items: center;
+    // justify-content: center;
 }
 
 .footer-logo {
@@ -299,3 +300,34 @@ h1 {
 .secondary-btn {
     @include secondary-btn(); // Uses the default values from the mixin definition
 }
+
+// media queries starting here
+@media only screen and (max-width: 768px) {
+    .workit-header {
+        height: 33.765rem;
+    }
+
+    .workit-hero-title {
+        font-size: 3.75rem;
+    }
+    
+    .logo-container {
+        padding-left: 2.438rem;
+        padding-right: 2.5rem;
+    }
+
+    .bg-img {
+        background-position: left -55% top 20%, right -15% bottom 30%;
+        /* New positions for smaller screens */
+    }
+
+    .hero-img {
+        width: 100%;
+        max-width: 32.125rem;
+        height: auto
+    } 
+}
+
+
+
+// media queries end here
