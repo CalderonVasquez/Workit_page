@@ -85,12 +85,6 @@ $header-bg: $secondary-color;
     border-bottom-left-radius: 100% 15%;
 }
 
-h1 {
-    font-size: clamp(2.5rem, 4vw, 5rem);
-    /* Adjust values as needed */
-}
-
-
 .logo-container {
     display: flex;
     justify-content: space-between;
@@ -326,6 +320,47 @@ h1 {
         max-width: 32.125rem;
         height: auto
     } 
+
+    .workit-details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .workit-detail {
+        display: flex;
+        flex-direction: row;
+        width: 35.813rem;
+        height: 6.75rem;
+        margin-bottom: 3rem;
+    }
+
+    .workit-detail-number {
+        font-size: 1rem;
+        text-align: center;
+        border: 1px solid $dark-gray;
+        color: $secondary-color;
+        border-radius: 50%;
+        line-height: 2.25rem;
+        margin-top: 2.813rem;
+        padding: 0.313rem 1rem;
+        margin-right: 2rem;
+        width: 3rem;
+        height: 2.75rem;
+    }
+
+    .workit-detail-title {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        text-align: left;
+    }
+
+    .workit-detail-content {
+        font-size: 1rem;
+        line-height: 1.75rem;
+        text-align: left;
+    }
 }
 
 
