@@ -312,7 +312,6 @@ $header-bg: $secondary-color;
 
     .bg-img {
         background-position: left -55% top 20%, right -15% bottom 30%;
-        /* New positions for smaller screens */
     }
 
     .hero-img {
@@ -363,6 +362,76 @@ $header-bg: $secondary-color;
     }
 }
 
+@media only screen and (max-width: 375px) {
+    .workit-header {
+        height: 20rem;
+    }
 
+    .workit-hero-title {
+        font-size: 3.125rem;
+        line-height: 3.125rem;
+    }
 
+    .logo-container {
+        padding-top: 2rem;
+        padding-left: 1.019rem;
+        padding-right: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .hero-btn {
+        font-size: 1rem;
+        padding: 0;
+        line-height: 2rem;
+        width: 8.313em;
+        height: 3.438em;
+    }
+
+    .bg-img {
+        background-position: left -1000% top 20%, right -85% bottom 30%;
+    }
+    
+    .hero-img {
+        width: 100%;
+        max-width: 20rem;
+        height: auto;
+        position: relative;
+        top: 100px;
+        left: 15px;
+    
+    }
+
+    .workit-detail {
+        display: flex;
+        flex-direction: column;
+        width: 21.438rem;
+        height: 5.25rem;
+        // margin-bottom: 3rem;
+    }
+
+    .workit-detail-title {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .workit-detail-content {
+        padding-bottom: 2.5rem;
+        text-align: center;
+    }
+
+    .workit-detail-number {
+        font-size: 1rem;
+        text-align: center;
+        border: 1px solid $dark-gray;
+        color: $secondary-color;
+        border-radius: 50%;
+        line-height: 2.25rem;
+        // margin-top: 2.813rem;
+        padding: 0.313rem 1rem;
+        margin-right: 2rem;
+        width: 3rem;
+        height: 2.75rem;
+    }
+        
+}
 // media queries end here
