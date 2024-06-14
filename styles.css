@@ -302,6 +302,12 @@ h6 {
     padding-left: 2.438rem;
     padding-right: 2.5rem;
   }
+  .header-btn {
+    width: 7.75rem;
+    height: 2.125rem;
+    font-size: 1rem;
+    border: none;
+  }
   .bg-img {
     background-position: left -55% top 20%, right -15% bottom 30%;
   }
@@ -318,7 +324,7 @@ h6 {
   }
   .workit-detail {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 35.813rem;
     height: 6.75rem;
     margin-bottom: 3rem;
@@ -333,6 +339,7 @@ h6 {
     margin-top: 2.813rem;
     padding: 0.313rem 1rem;
     margin-right: 2rem;
+    margin-top: 0;
     width: 3rem;
     height: 2.75rem;
   }
@@ -361,6 +368,13 @@ h6 {
     padding-right: 1rem;
     margin-bottom: 4rem;
   }
+  .header-btn {
+    width: 7.75rem;
+    height: 2.125rem;
+    font-size: 1rem;
+    padding: 0;
+    line-height: 2rem;
+  }
   .hero-btn {
     font-size: 1rem;
     padding: 0;
@@ -379,19 +393,32 @@ h6 {
     top: 100px;
     left: 15px;
   }
+  .workit-details-section {
+    height: suto;
+  }
+  .workit-details-container {
+    display: flex;
+    gap: 2.5rem;
+  }
   .workit-detail {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-content: center;
     width: 21.438rem;
-    height: 5.25rem;
+    height: 14.875rem;
+    margin: 0;
+    padding: 1.5 1.5rem 1.5rem 1.5rem;
   }
   .workit-detail-title {
+    font-size: 1.75rem;
     text-align: center;
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
   }
   .workit-detail-content {
-    padding-bottom: 2.5rem;
     text-align: center;
+    padding: 0;
   }
   .workit-detail-number {
     font-size: 1rem;
@@ -400,10 +427,10 @@ h6 {
     color: hsl(273, 85%, 13%);
     border-radius: 50%;
     line-height: 2.25rem;
+    margin-bottom: 1.5rem;
     padding: 0.313rem 1rem;
-    margin-right: 2rem;
+    margin: 0;
     width: 3rem;
-    height: 2.75rem;
   }
 }
 
