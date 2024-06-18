@@ -78,7 +78,7 @@ $header-bg: $secondary-color;
 .workit-header {
     background-color: $header-bg;
     height: 730px;
-    min-height: 73vh;
+    // min-height: 73vh;
     width: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-bottom-right-radius: 100% 15%;
@@ -380,24 +380,24 @@ $header-bg: $secondary-color;
 
     .workit-founder-section {
         width: 43.063rem;
-        height: 32.875rem;
+        // height: 32.875rem;
         margin-left: 2.438rem;
         margin-right:2.5rem;
-        padding-bottom: 0;
-        border: 2px solid green;
     }
 
     .workit-founder-card {
-        margin: 0;
-        margin-bottom: 0;
-        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        margin-top: 3rem;
+        padding-bottom: 1.5;
+        margin-left: -5.5rem;
+        margin-bottom: 2.5rem;
     }
 
     .workit-founder-img {
         width: 100%;
-        height: auto;
-        margin-bottom: 0;
-        border: 2px solid blue;
+        margin-bottom: 13.5rem;
     }
 
     .workit-card-title {
@@ -411,16 +411,37 @@ $header-bg: $secondary-color;
         text-align: left;
         line-height: 1.75rem;
     }
+
+    .founder-btn {
+        width: 10.75rem;
+        height: 3.438rem;
+        font-size: 1rem;
+        border: 2px solid $primary-color;
+    }
+
+    .bg-img-small {
+        position: relative;
+        bottom: 60px;
+        left: 250px;
+    }
+
+    .workit-footer {
+        margin-bottom: 7.611rem;
+    }
 }
 
 @media only screen and (max-width: 375px) {
     .workit-header {
-        height: 20rem;
+        width: 23.456rem;
+        height: auto;
     }
 
     .workit-hero-title {
         font-size: 3.125rem;
         line-height: 3.125rem;
+        text-align: center;
+        margin: 0 1rem 4rem 1rem;
+        padding: 0;
     }
 
     .logo-container {
@@ -447,16 +468,17 @@ $header-bg: $secondary-color;
     }
 
     .bg-img {
-        background-position: left -1000% top 20%, right -85% bottom 30%;
+        background-position: left -2000% top 20%, right -85% bottom 30%;
+        
     }
     
     .hero-img {
         width: 100%;
         max-width: 20rem;
-        height: auto;
+        height: 11.5rem;
         position: relative;
-        top: 100px;
-        left: 15px;
+        top: 90px;
+        left: 10px;
     }
 
     .workit-details-section {
@@ -510,7 +532,9 @@ $header-bg: $secondary-color;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 6.393rem 2.938rem 0 2.938rem;
+        margin: 6.268rem 1rem 0 1rem;
+        width: 21.438rem;
+        height: 37.688rem;
     }
 
     .workit-founder-img {
@@ -545,6 +569,7 @@ $header-bg: $secondary-color;
         width: 10.75rem;
         height: 3.438rem;
         font-size: 1rem;
+        margin-bottom: 2rem;
         border: 2px solid $primary-color;
     }
 
