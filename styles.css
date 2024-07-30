@@ -53,7 +53,7 @@ h6 {
 
 .workit-header {
   background-color: hsl(273, 85%, 13%);
-  height: 100vh;
+  min-height: calc(100vh - 80px);
   width: 100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-bottom-right-radius: 100% 15%;
@@ -102,6 +102,7 @@ h6 {
   max-width: 100%;
   background-color: #fcf8ff;
   min-height: 96vh;
+  margin-top: 5.625rem;
   border-bottom-right-radius: 100% 15%;
   border-bottom-left-radius: 100% 15%;
 }
@@ -296,155 +297,6 @@ h6 {
 }
 .secondary-btn:hover {
   color: hsl(150, 100%, 63%);
-}
-
-@media only screen and (max-width: 768px) {
-  .workit-header {
-    height: 33.765rem;
-  }
-  .workit-hero-title {
-    font-size: 3.75rem;
-  }
-  .logo-container {
-    padding-left: 2.438rem;
-    padding-right: 2.5rem;
-  }
-  .header-btn {
-    width: 7.75rem;
-    height: 2.125rem;
-    font-size: 1rem;
-    border: none;
-  }
-  .bg-img {
-    background-position: left -55% top 20%, right -15% bottom 30%;
-  }
-  .hero-img {
-    width: 100%;
-    max-width: 32.125rem;
-    height: auto;
-  }
-  .workit-details-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 5.954rem;
-  }
-  .workit-detail {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 35.813rem;
-    height: 6.75rem;
-    margin-bottom: 3rem;
-  }
-  .workit-detail-number {
-    font-size: 1rem;
-    border: 1px solid #584062;
-    color: hsl(273, 85%, 13%);
-    border-radius: 50%;
-    line-height: 2.25rem;
-    margin-top: 2.813rem;
-    padding: 0.313rem 1rem;
-    margin-right: 2rem;
-    margin-top: 0;
-    width: 3rem;
-    height: 2.75rem;
-  }
-  .workit-detail-bottom {
-    display: flex;
-    flex-direction: column;
-  }
-  .workit-detail-title {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-    text-align: left;
-    padding-top: 0;
-    padding-bottom: 1rem;
-  }
-  .workit-detail-content {
-    font-size: 1rem;
-    line-height: 1.75rem;
-    text-align: left;
-    padding: 0;
-  }
-  .workit-founder-section {
-    width: 43.063rem;
-    margin-left: 2.438rem;
-    margin-right: 2.5rem;
-  }
-  .workit-founder-card {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-    margin-top: 3rem;
-    padding-bottom: 1.5;
-    margin-left: -5.5rem;
-    margin-bottom: 2.5rem;
-  }
-  .workit-founder-img {
-    width: 100%;
-    margin-bottom: 13.5rem;
-  }
-  .workit-card-title {
-    font-size: 3rem;
-    text-align: left;
-    line-height: 3.5rem;
-  }
-  .workit-card-content {
-    font-size: 1rem;
-    text-align: left;
-    line-height: 1.75rem;
-  }
-  .founder-btn {
-    width: 10.75rem;
-    height: 3.438rem;
-    font-size: 1rem;
-    border: 2px solid hsl(150, 100%, 63%);
-  }
-  .bg-img-small {
-    position: relative;
-    bottom: 60px;
-    left: 250px;
-  }
-  .workit-footer {
-    margin-bottom: 7.611rem;
-  }
-}
-/* Media Queries */
-@media (min-width: 768px) {
-  .workit-header {
-    height: 500px;
-  }
-  .hero-img {
-    max-width: 50%;
-  }
-}
-@media (max-width: 767px) {
-  .workit-header {
-    height: 300px;
-    padding: 2rem;
-  }
-  .logo-container {
-    padding: 1rem;
-  }
-  .workit-hero-title {
-    font-size: 1.2rem;
-    padding: 1rem;
-  }
-  .hero-img {
-    max-width: 100%;
-  }
-}
-/* Media Queries for details section */
-@media (max-width: 767px) {
-  .workit-details-container {
-    grid-auto-flow: row;
-    padding: 4rem;
-  }
-  .workit-detail {
-    justify-content: space-between;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
