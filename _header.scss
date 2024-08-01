@@ -5,6 +5,12 @@
    width: 100%;
 }
 
+@media only screen and (max-width: 500px) {
+   .bg-img {
+      background-image: none;
+   }
+}
+
 
 
 // .bg-img-small {
