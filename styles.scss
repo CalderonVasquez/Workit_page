@@ -121,9 +121,9 @@ $header-bg: $secondary-color;
     max-width: 100%;
     background-color: $light-gray;
     min-height: 96vh;
-    margin-top: 5.625rem;
-    border-bottom-right-radius: 100% 15%;
-    border-bottom-left-radius: 100% 15%;
+    // margin-top: 5.625rem;
+    border-bottom-right-radius: 100% 8%;
+    border-bottom-left-radius: 100% 8%;
 }
 .workit-details-container {
     display: grid;
@@ -143,6 +143,8 @@ $header-bg: $secondary-color;
 
 .workit-detail-number{
     font-size: 1.5rem;
+    font-weight: 600;
+    font-family: $font-family-heading;
     text-align: center;
     border: .5px solid $dark-gray;
     color: $secondary-color;
@@ -152,23 +154,26 @@ $header-bg: $secondary-color;
     width: 3.5rem;
     height: 3.5rem;
 }
-
-.workit-detail-content {
-    text-align: center;
-    padding-top: 1.75rem;
-    font-size: $base-font-size;
-    font-family: $font-family-body;
-    color: $secondary-color;
-    text-align: center;
-}
 .workit-detail-title {
     text-align: center;
     padding-top: 3.5rem;
+    font-weight: 600;
     font-size: $heading-s-size;
     line-height: $heading-s-line-height;
     font-family: $font-family-heading;
     color: $secondary-color
 }
+
+.workit-detail-content {
+    text-align: center;
+    padding-top: 1.75rem;
+    font-weight: 300;
+    font-size: $base-font-size;
+    font-family: $font-family-body;
+    color: $secondary-color;
+    text-align: center;
+}
+
 //workit details section end  
 
 // workit founder section starts here
@@ -309,7 +314,7 @@ $header-bg: $secondary-color;
         font-size: 3.125rem;
         line-height: 3.125rem;
         margin-top: 4rem;
-        font-weight: 600;
+        font-weight: 500;
     }
     .primary-btn {
         font-size: 1rem;
@@ -320,8 +325,30 @@ $header-bg: $secondary-color;
         width: 20rem;
         height: auto;
         top: 80px;
-        left: 15px
+        left: 15px;
     }
+    .workit-details-container {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1.019rem 4.482rem 1rem;
+    }
+
+    .workit-detail-number {
+        width: 3rem;
+        height: 2.875rem;
+        font-size: 1.25rem;
+        margin-top: 5.5rem;
+        padding: 0.313rem 1rem;
+    }
+    .workit-detail-title {
+        font-size: 1.75rem;
+        padding-top: 1.5rem;
+    }
+   .workit-detail-content {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+   }
 }
 
 

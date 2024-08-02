@@ -106,9 +106,8 @@ h6 {
   max-width: 100%;
   background-color: #fcf8ff;
   min-height: 96vh;
-  margin-top: 5.625rem;
-  border-bottom-right-radius: 100% 15%;
-  border-bottom-left-radius: 100% 15%;
+  border-bottom-right-radius: 100% 8%;
+  border-bottom-left-radius: 100% 8%;
 }
 
 .workit-details-container {
@@ -129,6 +128,8 @@ h6 {
 
 .workit-detail-number {
   font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Fraunces144", serif;
   text-align: center;
   border: 0.5px solid #584062;
   color: hsl(273, 85%, 13%);
@@ -139,22 +140,24 @@ h6 {
   height: 3.5rem;
 }
 
-.workit-detail-content {
-  text-align: center;
-  padding-top: 1.75rem;
-  font-size: 1.125rem;
-  font-family: "Manrope", sans-serif;
-  color: hsl(273, 85%, 13%);
-  text-align: center;
-}
-
 .workit-detail-title {
   text-align: center;
   padding-top: 3.5rem;
+  font-weight: 600;
   font-size: 2rem;
   line-height: 2.5rem;
   font-family: "Fraunces144", serif;
   color: hsl(273, 85%, 13%);
+}
+
+.workit-detail-content {
+  text-align: center;
+  padding-top: 1.75rem;
+  font-weight: 300;
+  font-size: 1.125rem;
+  font-family: "Manrope", sans-serif;
+  color: hsl(273, 85%, 13%);
+  text-align: center;
 }
 
 .workit-founder-section {
@@ -315,7 +318,7 @@ h6 {
     font-size: 3.125rem;
     line-height: 3.125rem;
     margin-top: 4rem;
-    font-weight: 600;
+    font-weight: 500;
   }
   .primary-btn {
     font-size: 1rem;
@@ -327,6 +330,27 @@ h6 {
     height: auto;
     top: 80px;
     left: 15px;
+  }
+  .workit-details-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1.019rem 4.482rem 1rem;
+  }
+  .workit-detail-number {
+    width: 3rem;
+    height: 2.875rem;
+    font-size: 1.25rem;
+    margin-top: 5.5rem;
+    padding: 0.313rem 1rem;
+  }
+  .workit-detail-title {
+    font-size: 1.75rem;
+    padding-top: 1.5rem;
+  }
+  .workit-detail-content {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1rem;
   }
 }
 
