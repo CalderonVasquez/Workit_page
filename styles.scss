@@ -183,7 +183,6 @@ $header-bg: $secondary-color;
     margin-top: 6.875rem;
     margin-left: 10.188rem;
     margin-right: 10.313rem;
-    border: 2px solid lightblue;
 }
 
 .workit-founder-img {
@@ -253,10 +252,11 @@ $header-bg: $secondary-color;
 .workit-footer {
     max-width: 116px;
     // height: 102.22px;
-    margin: 3.752rem 41.438rem 6.875rem 41.313rem;
+    // margin: 0 41.438rem 6.875rem 41.313rem;
     display: flex;
     flex-direction: column;
     margin: auto;
+    border: 2px solid orange;
 }
 
 .footer-logo {
@@ -356,10 +356,10 @@ $header-bg: $secondary-color;
    }
 
     .workit-founder-section {
-        flex-direction: column;
+         flex-direction: column;
         width: 100%;
         max-width: 21.438rem;
-        margin: 6.268rem 1rem 4.625rem 1rem;
+        margin: 6.268rem auto 4.625rem auto;
     }
 
     .workit-founder-img {
@@ -368,20 +368,23 @@ $header-bg: $secondary-color;
         height: 17.50rem;
     }
 
-    .workit-founder-card {
-        align-items: center;
-        max-width: 21.438rem;
-        padding: 2rem 1.969rem 0 1.969rem;
-        margin: -3.25rem 1rem 0 1rem;
-        width: 100%;
-   }
+ .workit-founder-card {
+     align-items: center;
+     max-width: 21.438rem;
+    //  height: 375px;
+     padding: 2rem 1.969rem 0 1.969rem;
+     margin: -3.25rem auto 0 auto;
+     width: 100%;
+     overflow: hidden;
+    border: 2px solid orange;
+ }
 
    .workit-card-title {
-        font-size: 2rem;
-        text-align: center;
-        margin-bottom: 1rem;
-        padding: 0;
-        font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0;
+    font-weight: 600;
    }
 
     .workit-card-content {
@@ -389,13 +392,13 @@ $header-bg: $secondary-color;
     line-height: 1.75rem;
     font-size: 1rem;
     padding: 0;
+    margin-top: -.50rem;
     margin-bottom: 1.5rem;
     }
 
     .primary-card-btn {
-        width: 10.75rem;
-        height: 3.438;
         font-size: 1rem;
+        padding: 0.688rem 1.469rem .75rem 1.469rem;
     }
     .bg-img-small {
         display: none;
