@@ -163,11 +163,12 @@ h6 {
 .workit-founder-section {
   display: flex;
   align-items: center;
-  max-width: 1112px;
+  max-width: 69.5rem;
   min-height: 647.74px;
   margin-top: 6.875rem;
   margin-left: 10.188rem;
   margin-right: 10.313rem;
+  border: 2px solid lightblue;
 }
 
 .workit-founder-img {
@@ -181,10 +182,9 @@ h6 {
   align-items: flex-start;
   flex-grow: 1;
   flex-direction: column;
-  max-width: 730px;
+  max-width: 45.625rem;
   height: 413px;
   margin-left: -6rem;
-  margin-bottom: 3.859rem;
   background-color: hsl(273, 85%, 13%);
   padding: 4rem 2rem 4.063rem 4.063rem;
 }
@@ -208,7 +208,7 @@ h6 {
 }
 
 .primary-card-btn {
-  width: 11.875rem;
+  max-width: 11.875rem;
   height: 3.625rem;
   font-size: 1.125rem;
   font-family: "Manrope", sans-serif;
@@ -351,6 +351,46 @@ h6 {
     font-size: 1rem;
     text-align: center;
     padding-top: 1rem;
+  }
+  .workit-founder-section {
+    flex-direction: column;
+    width: 100%;
+    max-width: 21.438rem;
+    margin: 6.268rem 1rem 4.625rem 1rem;
+  }
+  .workit-founder-img {
+    margin: 0;
+    max-width: 17rem;
+    height: 17.5rem;
+  }
+  .workit-founder-card {
+    align-items: center;
+    max-width: 21.438rem;
+    padding: 2rem 1.969rem 0 1.969rem;
+    margin: -3.25rem 1rem 0 1rem;
+    width: 100%;
+  }
+  .workit-card-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0;
+    font-weight: 600;
+  }
+  .workit-card-content {
+    text-align: center;
+    line-height: 1.75rem;
+    font-size: 1rem;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+  .primary-card-btn {
+    width: 10.75rem;
+    height: 3.438;
+    font-size: 1rem;
+  }
+  .bg-img-small {
+    display: none;
   }
 }
 
