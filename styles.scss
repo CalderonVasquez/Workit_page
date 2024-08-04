@@ -119,7 +119,7 @@ $header-bg: $secondary-color;
 .workit-details-section {
     max-width: 100%;
     background-color: $light-gray;
-    min-height: 96vh;
+    // min-height: 96vh; 
     // margin-top: 5.625rem;
     border-bottom-right-radius: 100% 8%;
     border-bottom-left-radius: 100% 8%;
@@ -256,7 +256,6 @@ $header-bg: $secondary-color;
     display: flex;
     flex-direction: column;
     margin: auto;
-    border: 2px solid orange;
 }
 
 .footer-logo {
@@ -295,7 +294,143 @@ $header-bg: $secondary-color;
 
 
 // media queries starting here
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1300px) {
+    .workit-header {
+        height: 33.765rem;
+    }
+
+    .workit-hero-title {
+        font-size: 3.75rem;
+    }
+
+    .logo-container {
+        padding-left: 2.438rem;
+        padding-right: 2.5rem;
+    }
+
+    .header-btn {
+        width: 7.75rem;
+        height: 2.125rem;
+        font-size: 1rem;
+        border: none;
+    }
+
+    .bg-img {
+        background-position: left -55% top 20%, right -15% bottom 30%;
+    }
+
+    .hero-img {
+        width: 100%;
+        max-width: 32.125rem;
+        height: auto
+    }
+
+    .workit-details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 5.954rem;
+        border: 2px solid orange;
+    }
+
+    .workit-detail {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 35.813rem;
+        height: 6.75rem;
+        margin-bottom: 3rem;
+    }
+
+    .workit-detail-number {
+        font-size: 1rem;
+        border: 1px solid $dark-gray;
+        color: $secondary-color;
+        border-radius: 50%;
+        line-height: 2.25rem;
+        margin-top: 2.813rem;
+        padding: 0.313rem 1rem;
+        margin-right: 2rem;
+        margin-top: 0;
+        width: 3rem;
+        height: 2.75rem;
+    }
+
+    .workit-detail-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .workit-detail-title {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        text-align: left;
+        padding-top: 0;
+        padding-bottom: 1rem;
+    }
+
+    .workit-detail-content {
+        font-size: 1rem;
+        line-height: 1.75rem;
+        text-align: left;
+        padding: 0;
+    }
+
+    .workit-founder-section {
+        width: 43.063rem;
+        // height: 32.875rem;
+        margin: 0 auto;
+    }
+
+    .workit-founder-card {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        margin-top: 3rem;
+        padding-bottom: 1.5;
+        margin-left: -5.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .workit-founder-img {
+        width: 100%;
+        margin-bottom: 13.5rem;
+    }
+
+    .workit-card-title {
+        font-size: 3rem;
+        text-align: left;
+        line-height: 3.5rem;
+    }
+
+    .workit-card-content {
+        font-size: 1rem;
+        text-align: left;
+        line-height: 1.75rem;
+    }
+
+    .founder-btn {
+        width: 10.75rem;
+        height: 3.438rem;
+        font-size: 1rem;
+        border: 2px solid $primary-color;
+    }
+
+    .bg-img-small {
+        position: relative;
+        bottom: 60px;
+        left: 250px;
+    }
+
+    .workit-footer {
+        margin-bottom: 7.611rem;
+    }
+ }
+    
+
+
+@media only screen and (max-width: 650px) {
     .workit-header {
         min-height: 30.107rem;
         padding: 2rem 1rem 0 1rem;
@@ -334,25 +469,37 @@ $header-bg: $secondary-color;
         display: flex;
         flex-direction: column;
         padding: 3rem 1.019rem 4.482rem 1rem;
+        gap: 2.5rem;
     }
+
+   .workit-detail {
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       width: 100%;
+       margin-bottom: 3rem;
+       padding-top: 3rem;
+   }
 
     .workit-detail-number {
         width: 3rem;
         height: 2.875rem;
         font-size: 1.25rem;
-        margin-top: 5.5rem;
+        margin-bottom: 1.5rem;
         padding: 0.313rem 1rem;
     }
 
     .workit-detail-title {
         font-size: 1.75rem;
-        padding-top: 1.5rem;
+        padding: 0;
+        margin: 0 auto;
     }
 
    .workit-detail-content {
         font-size: 1rem;
         text-align: center;
         padding-top: 1rem;
+        margin-bottom: 2.5rem;
    }
 
     .workit-founder-section {
@@ -376,7 +523,6 @@ $header-bg: $secondary-color;
      margin: -3.25rem auto 0 auto;
      width: 100%;
      overflow: hidden;
-    border: 2px solid orange;
  }
 
    .workit-card-title {
@@ -407,152 +553,5 @@ $header-bg: $secondary-color;
 
 
 
-
-
-
-// @media only screen and (max-width: 800px) {
-//     .workit-header {
-//         height: 33.765rem;
-//     }
-
-//     .workit-hero-title {
-//         font-size: 3.75rem;
-//     }
-    
-//     .logo-container {
-//         padding-left: 2.438rem;
-//         padding-right: 2.5rem;
-//     }
-
-//     .header-btn{
-//         width: 7.75rem;
-//         height: 2.125rem;
-//         font-size: 1rem;
-//         border: none;
-//     }
-
-//     .bg-img {
-//         background-position: left -55% top 20%, right -15% bottom 30%;
-//     }
-
-//     .hero-img {
-//         width: 100%;
-//         max-width: 32.125rem;
-//         height: auto
-//     } 
-
-//     .workit-details-container {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         align-content: center;
-//         margin-bottom: 5.954rem;
-//     }
-
-//     .workit-detail {
-//         display: flex;
-//         flex-direction: row;
-//         align-items: center;
-//         width: 35.813rem;
-//         height: 6.75rem;
-//         margin-bottom: 3rem;
-//     }
-
-//     .workit-detail-number {
-//         font-size: 1rem;
-//         border: 1px solid $dark-gray;
-//         color: $secondary-color;
-//         border-radius: 50%;
-//         line-height: 2.25rem;
-//         margin-top: 2.813rem;
-//         padding: 0.313rem 1rem;
-//         margin-right: 2rem;
-//         margin-top: 0;
-//         width: 3rem;
-//         height: 2.75rem;
-//     }
-
-//     .workit-detail-bottom {
-//         display: flex;
-//         flex-direction: column;
-//     }
-
-//     .workit-detail-title {
-//         font-size: 1.75rem;
-//         line-height: 2.25rem;
-//         text-align: left;
-//         padding-top: 0;
-//         padding-bottom: 1rem;
-//     }
-
-//     .workit-detail-content {
-//         font-size: 1rem;
-//         line-height: 1.75rem;
-//         text-align: left;
-//         padding: 0;
-//     }
-
-//     .workit-founder-section {
-//         width: 43.063rem;
-//         // height: 32.875rem;
-//         margin-left: 2.438rem;
-//         margin-right:2.5rem;
-//     }
-
-//     .workit-founder-card {
-//         display: flex;
-//         flex-direction: column;
-//         align-content: flex-end;
-//         margin-top: 3rem;
-//         padding-bottom: 1.5;
-//         margin-left: -5.5rem;
-//         margin-bottom: 2.5rem;
-//     }
-
-//     .workit-founder-img {
-//         width: 100%;
-//         margin-bottom: 13.5rem;
-//     }
-
-//     .workit-card-title {
-//         font-size: 3rem;
-//         text-align: left;
-//         line-height: 3.5rem;
-//     }
-
-//     .workit-card-content {
-//         font-size: 1rem;
-//         text-align: left;
-//         line-height: 1.75rem;
-//     }
-
-//     .founder-btn {
-//         width: 10.75rem;
-//         height: 3.438rem;
-//         font-size: 1rem;
-//         border: 2px solid $primary-color;
-//     }
-
-//     .bg-img-small {
-//         position: relative;
-//         bottom: 60px;
-//         left: 250px;
-//     }
-
-//     .workit-footer {
-//         margin-bottom: 7.611rem;
-//     }
-// }
-
-// @media screen and (max-width: 400px){
-//     .workit-detail {
-//        display: flex;
-//        flex-direction: column;
-//        max-width: 23.456rem;
-//        align-items: center;
-//        align-content: center;
-//        margin: 0 1rem 2.5rem 1rem;
-//     }
-// }
 
 
