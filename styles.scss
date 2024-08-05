@@ -331,7 +331,6 @@ $header-bg: $secondary-color;
         align-items: center;
         align-content: center;
         margin-bottom: 5.954rem;
-        border: 2px solid orange;
     }
 
     .workit-detail {
@@ -478,7 +477,13 @@ $header-bg: $secondary-color;
        text-align: center;
        width: 100%;
        margin-bottom: 3rem;
-       padding-top: 3rem;
+       padding: 0;
+        border: 2px solid orange;
+   }
+   .workit-detail-bottom {
+    margin-bottom: 3rem;
+    padding: 0;
+        border: 2px solid green;
    }
 
     .workit-detail-number {
