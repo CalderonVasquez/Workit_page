@@ -73,11 +73,10 @@ $header-bg: $secondary-color;
 // header section starts here
 .workit-header {
     background-color: $header-bg;
-    // min-height: calc(100vh - 80px);
     width: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-bottom-right-radius: 100% 8%;
-    border-bottom-left-radius: 100% 8%;
+    border-bottom-right-radius: 100% 10%;
+    border-bottom-left-radius: 100% 10%;
 }
 
 .logo-container {
@@ -119,10 +118,10 @@ $header-bg: $secondary-color;
 .workit-details-section {
     max-width: 100%;
     background-color: $light-gray;
-    // min-height: 96vh; 
-    // margin-top: 5.625rem;
-    border-bottom-right-radius: 100% 8%;
-    border-bottom-left-radius: 100% 8%;
+    border-bottom-right-radius: 100% 10%;
+    border-bottom-left-radius: 100% 10%;
+    box-shadow: 0px 4px 4px rgba(242, 237, 237, 0.715);
+    border: 2px solid $light-gray;
 }
 .workit-details-container {
     display: grid;
@@ -150,8 +149,6 @@ $header-bg: $secondary-color;
     border-radius: 50%;
     line-height: 2.5rem;
     padding: 0.5rem 1.469rem;
-    // width: 3.5rem;
-    // height: 3.5rem;
 }
 .workit-detail-title {
     text-align: center;
@@ -180,9 +177,7 @@ $header-bg: $secondary-color;
     align-items: center;
     max-width: 69.5rem;
     min-height: 647.74px;
-    margin-top: 6.875rem;
-    margin-left: 10.188rem;
-    margin-right: 10.313rem;
+    margin-top: 6.875rem;   
 }
 
 .workit-founder-img {
@@ -250,12 +245,12 @@ $header-bg: $secondary-color;
 
 //footer starts here
 .workit-footer {
-    max-width: 116px;
-    // height: 102.22px;
-    // margin: 0 41.438rem 6.875rem 41.313rem;
+    width: 100%;
+    max-width: 7.25rem;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0 auto 0 auto;
+    background-color: $color-white;
 }
 
 .footer-logo {
@@ -482,15 +477,6 @@ $header-bg: $secondary-color;
        margin-bottom: 2.5rem;
        padding: 0;
    }
-//    .workit-detail-bottom {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         margin-top: 1rem;
-//         padding-top: 3rem;
-//         padding-bottom: 0;
-//         border: 2px solid green;
-//    }
 
     .workit-detail-number {
         justify-content: center;
