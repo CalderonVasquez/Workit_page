@@ -260,8 +260,14 @@ h6 {
   background-color: hsl(273, 85%, 13%);
 }
 
-.footer-social-img:hover {
-  color: #fff;
+.attribution {
+  margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(273, 85%, 13%);
 }
 
 .primary-btn {

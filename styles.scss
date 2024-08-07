@@ -14,7 +14,7 @@ $font-family-heading: "Fraunces144", serif;
 $font-family-body: "Manrope", sans-serif;
 
 // project font sizes and line-heights
-$base-font-size: 1.125rem; // You can adjust this for your preference
+$base-font-size: 1.125rem; 
 
 $heading-l-size: 5rem;
 $heading-l-line-height: 5rem;
@@ -44,7 +44,7 @@ $header-bg: $secondary-color;
     &:hover {
         background-color: $hover-color;
         border: 1px solid $primary-color;
-        color: $primary-color; // Change the font color to $primary-color on hover
+        color: $primary-color; 
     }
 }
 
@@ -66,11 +66,11 @@ $header-bg: $secondary-color;
     text-underline-offset: 0.375em;
     
     &:hover {
-        color: $primary-color; // Change the font color to $primary-color on hover
+        color: $primary-color;
     }
 }
 
-// header section starts here
+// header section starts here **
 .workit-header {
     background-color: $header-bg;
     width: 100%;
@@ -114,7 +114,7 @@ $header-bg: $secondary-color;
 }
 // header section ends here
 
-// workit details section
+// workit details section **
 .workit-details-section {
     max-width: 100%;
     background-color: $light-gray;
@@ -171,7 +171,7 @@ $header-bg: $secondary-color;
 }
 //workit details section end  
 
-// workit founder section starts here
+// workit founder section starts here ***
 .workit-founder-section {
     display: flex;
     align-items: center;
@@ -243,7 +243,7 @@ $header-bg: $secondary-color;
 }
 //founder section ends here
 
-//footer starts here
+//footer starts here ***********
 .workit-footer {
     width: 100%;
     max-width: 7.25rem;
@@ -275,8 +275,14 @@ $header-bg: $secondary-color;
     background-color: $secondary-color;
 }
 
-.footer-social-img:hover {
-    color: $color-white;
+.attribution {
+    margin-top: 2rem;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: $secondary-color;
 }
 
 .primary-btn {
@@ -287,8 +293,8 @@ $header-bg: $secondary-color;
     @include secondary-btn(); 
 }
 
+// media queries starting here *****************
 
-// media queries starting here
 @media only screen and (max-width: 1300px) {
     .workit-header {
         height: 33.765rem;
@@ -420,8 +426,6 @@ $header-bg: $secondary-color;
         margin-bottom: 7.611rem;
     }
  }
-    
-
 
 @media only screen and (max-width: 650px) {
     .workit-header {
@@ -502,7 +506,7 @@ $header-bg: $secondary-color;
    }
 
     .workit-founder-section {
-         flex-direction: column;
+        flex-direction: column;
         width: 100%;
         max-width: 21.438rem;
         margin: 6.268rem auto 4.625rem auto;
@@ -519,7 +523,6 @@ $header-bg: $secondary-color;
      padding: 2rem 1.969rem 2rem 1.969rem;
      margin: -3.25rem auto 0 auto;
      width: 100%;
-    //  overflow: hidden;
  }
 
    .workit-card-title {
@@ -536,7 +539,6 @@ $header-bg: $secondary-color;
     font-size: 1rem;
     padding: 0;
     margin-top: -.50rem;
-    // margin-bottom: 1.5rem;
     }
 
     .primary-card-btn {
