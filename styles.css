@@ -260,7 +260,7 @@ h6 {
   background-color: hsl(273, 85%, 13%);
 }
 
-.attribution {
+/* .attribution {
   margin-top: 2rem;
   font-size: 11px;
   text-align: center;
@@ -268,7 +268,7 @@ h6 {
 
 .attribution a {
   color: hsl(273, 85%, 13%);
-}
+} */
 
 .primary-btn {
   background-color: hsl(150, 100%, 63%);
