@@ -137,7 +137,7 @@ header {
   z-index: 5;
 }
 
-/* ------------------------ Features ------------------ */
+/* --------------------------- Features --------------------- */
 #features {
   background-color: #FCF8FF;
   height: 100%;
@@ -189,7 +189,7 @@ header {
 }
 
 
-/* ------------------------ Founder --------------------- */
+/* --------------------------- Founder ----------------------- */
 #founder {
   margin-top: 25rem;
   margin-bottom: 8rem;
@@ -278,20 +278,7 @@ footer {
   padding: 0 1.5rem;
 }
 
-/* 
-
-
-
-
-
-
-Media Queries
-
-
-
-
-
-*/
+/* -------------------------- Media Queries ------------------------ */
 
 @media screen and (max-width: 1368px) {
   .hero-img {
@@ -399,13 +386,9 @@ Media Queries
 }
 
 @media screen and (max-width: 851px) {
-
-
   .header-text h1 {
     width: 50%;
   }
-
-
 
   .access-card {
     width: 100%;
@@ -420,7 +403,6 @@ Media Queries
     font-size: 40px;
     padding-bottom: 2rem;
   }
-
 
   .founder-circles {
     display: none;
@@ -474,7 +456,6 @@ Media Queries
     font-size: 28px;
     margin-bottom: 1rem;
   }
-
 
   #founder {
     margin-top: 25rem;
