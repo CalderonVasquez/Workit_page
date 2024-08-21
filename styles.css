@@ -449,11 +449,11 @@ footer {
   }
 
   .feature-number p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .feature h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
     margin-bottom: 1rem;
   }
 
@@ -487,7 +487,7 @@ footer {
   }
 
   .access-card-content h2 {
-    font-size: 48px;
+    font-size: 3rem;
     margin-top: 3rem;
   }
 
