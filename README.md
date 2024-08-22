@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/images/Screenshot-Workit.png)
+![](/images/Workit%20landing%20page-SS.png)
 
 ### Links
 
